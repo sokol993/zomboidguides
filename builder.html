@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="design.css">
+</head>
+<script src="script.js"></script>
+<body>
+
+<!-- Side navigation -->
+<div class="sidenav">
+    <a href="main.html">Calculations</a>
+    <a href="builder.html">Building</a>
+    <a href="guides.html">Guides</a>
+    <a href="#">Tips & Tricks</a>
+    <a href="#">Server settings</a>
+</div>
+
+<div class="encasedDiv" style="display: flex;">
+<div class="construction">
+    <h1>Construction</h1>
+    <p style="font-size:120%;">Square footage:</p>
+    <var style="font-family:Trebuchet MS"; id="squareFootage"></var><br><br>
+    <label for="wallNum">Wall width:</label><br>
+    <input type="number" id="wallWidth" name="wallWidth"><br><br>
+    <label for="wallNum">Wall length:</label><br>
+    <input type="number" id="wallLength" name="wallLength"><br><br>
+    <button type="button" onclick = "materialCost()" >Calculate</button><br><br>
+    <p style="font-size:120%;">Wall cost:</p>
+    <var id="matCost"></var><br>
+    <p style="font-size:120%;">Floor & Roof cost:</p>
+    <var id="floorRoofCost"></var><br>
+    <p style="font-size:120%;">Door cost:</p>
+    <var id="doorCost"></var><br>
+    <p style="font-size:120%;">Total of all:</p>
+    <b><var id="sumMaterials"></var></b>
+    
+
+</div>
+</div>
+</body>
+</html>

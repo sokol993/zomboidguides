@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="design.css">
+</head>
+
+<script src="script.js"></script>
+<body>
+    
+<!-- Side navigation -->
+<div class="sidenav">
+    <a href="main.html">Calculations</a>
+    <a href="builder.html">Building</a>
+    <a href="guides.html">Guides</a>
+    <a href="#">Tips & Tricks</a>
+    <a href="#">Server settings</a>
+</div>
+
+<div class="encasedDiv" style="display: flex;">
+<div class="books">
+    <h1>Reading Books</h1>
+    <p>Book volume</p>
+    <select name="volumes" id="volumes">
+        <option value="vol1">Volume 1</option>
+        <option value="vol2">Volume 2</option>
+        <option value="vol3">Volume 3</option>
+        <option value="vol4">Volume 4</option>
+        <option value="vol5">Volume 5</option>
+    </select>
+    <select name="readTrait" id="readTrait">
+        <option value="fast">Slow Reader</option>
+        <option value="normal">Normal</option>
+        <option value="slow">Fast Reader</option>
+        
+    </select>
+    <br>
+    <p>Reading speed (default is 1):</p>
+    <input type="number" id="readspeed" name="readspeed" value="1" step="0.01" min="0.001"><br><br>
+    <button type="button" onclick = "bookCalculation()" >Calculate</button><br><br>
+    The book will take:<br>
+    <b><span><var id="result"></var></span></b>
+</div>
+</div>
+
+
+</body>
+</html>
